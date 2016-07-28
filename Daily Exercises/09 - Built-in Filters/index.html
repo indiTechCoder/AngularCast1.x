@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Egghead - AngularJS Tutorial</title>
+	<link rel="stylesheet" href="http://localhost/vendor/foundation/css/foundation.min.css">
+</head>
+<body>
+
+	<div ng-app="myApp" ng-controller="AvengersCtrl">
+		<table>
+			<input type="text" ng-model="search.$">
+			<!-- <tr ng-repeat="actor in avengers.cast | orderBy:'name'"> -->
+			<!-- <tr ng-repeat="actor in avengers.cast | orderBy:'-name'"> -->
+			<!-- <tr ng-repeat="actor in avengers.cast |limitTo:5"> -->
+			<!-- <tr ng-repeat="actor in avengers.cast |limitTo:-5"> -->
+			<!-- <tr ng-repeat="actor in avengers.cast |orderBy:'name'|limitTo:-5"> -->
+			<!-- <tr ng-repeat="actor in avengers.cast |orderBy:'name'|limitTo:-5"> -->
+			<tr ng-repeat="actor in avengers.cast |orderBy:'-name'|limitTo:-5|filter:search">
+				<td>{{actor.name|lowercase}}</td>
+				<td>{{actor.character|uppercase}}</td>
+			</tr>
+		</table>
+
+	</div>
+		
+	<script type="text/javascript" src="http://localhost/vendor/angular/angular.js"></script>
+	<script type="text/javascript" src="main.js"></script>	
+</body>
+</html>

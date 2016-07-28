@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Egghead - AngularJS Tutorial</title>
+	<link rel="stylesheet" href="http://localhost/vendor/foundation/css/foundation.min.css">
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="FirstCtrl">
+			<input type="text" ng-model="data.message">
+			<h1>{{data.message}}</h1>
+		</div>
+
+		<div ng-controller="SecondCtrl">
+			<input type="text" ng-model="data.message">
+			<h1>{{data.message|reverse}}</h1>
+			<h1>{{reversedMessage}}</h1>			
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://localhost/vendor/angular/angular.js"></script>
+	<script type="text/javascript" src="app/js/app.js"></script>
+	<script type="text/javascript" src="app/js/controllers.js"></script>
+    <script type="text/javascript" src="app/js/filters.js"></script>
+</body>
+</html>

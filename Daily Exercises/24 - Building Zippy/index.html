@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Egghead - AngularJS Tutorial</title>
+	<link rel="stylesheet" href="http://localhost/vendor/foundation/css/foundation.min.css">
+</head>
+<body>
+
+	<div ng-app="app">
+		Title: <input class="text" ng-model="model.title">
+		Content: <input class="text" ng-model="model.content">
+
+		<zippy title="{{model.title}}">
+			The content is: "{{model.content}}"
+		</zippy>
+
+	</div>
+
+	<script type="text/javascript" src="http://localhost/vendor/angular/angular.js"></script>
+	<script type="text/javascript" src="main.js"></script> 
+</body>
+</html>

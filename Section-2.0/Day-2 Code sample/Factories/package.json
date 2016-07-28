@@ -1,0 +1,14 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+ "scripts": {    
+    "dev": "lite-server"
+  },
+  "author": "TARUN SHARMA <tarun.softengg@gmail.com> (http://tkssharma.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
